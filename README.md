@@ -1,73 +1,112 @@
-# Welcome to your Lovable project
+# Personal Portfolio Website
 
-## Project info
+A modern, responsive personal portfolio website showcasing professional experience, education, projects, and contact information.
 
-**URL**: https://lovable.dev/projects/9b8fb03c-ae7b-4cd0-933a-76e03d543c66
+## Features
 
-## How can I edit this code?
+- **Responsive Design**: Optimized for all device sizes
+- **Modern UI**: Built with shadcn/ui components and Tailwind CSS
+- **Interactive Navigation**: Smooth scrolling navigation between sections
+- **Professional Sections**:
+  - Hero section with personal introduction
+  - About section with professional summary
+  - Experience timeline
+  - Education background
+  - Projects showcase
+  - Contact information
+- **Dark/Light Theme Support**: Theme switching capabilities
+- **Animations**: Smooth animations and transitions
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS + shadcn/ui components
+- **Build Tool**: Vite
+- **UI Components**: Radix UI primitives
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+- **State Management**: React Query
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9b8fb03c-ae7b-4cd0-933a-76e03d543c66) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (recommended: install with [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
+- npm or bun
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd portfolio-cv
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies:
+```bash
+npm install
+# or
+bun install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server:
+```bash
+npm run dev
+# or
+bun run dev
+```
 
-**Use GitHub Codespaces**
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Available Scripts
 
-## What technologies are used for this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build in development mode
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-This project is built with:
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+├── components/          # React components
+│   ├── ui/             # shadcn/ui components
+│   ├── About.tsx       # About section
+│   ├── Contact.tsx     # Contact section
+│   ├── Education.tsx   # Education section
+│   ├── Experience.tsx  # Experience section
+│   ├── Hero.tsx        # Hero section
+│   ├── Navigation.tsx  # Navigation component
+│   └── Projects.tsx    # Projects section
+├── contexts/           # React contexts
+├── hooks/              # Custom hooks
+├── lib/                # Utility functions
+├── pages/              # Page components
+└── assets/             # Static assets
+```
 
-## How can I deploy this project?
+## Customization
 
-Simply open [Lovable](https://lovable.dev/projects/9b8fb03c-ae7b-4cd0-933a-76e03d543c66) and click on Share -> Publish.
+To customize this portfolio for your own use:
 
-## Can I connect a custom domain to my Lovable project?
+1. Update personal information in the component files
+2. Replace images in the `public/` and `src/assets/` directories
+3. Modify the resume PDF in `public/resume.pdf`
+4. Update social media links and contact information
+5. Add your own projects and experience details
 
-Yes, you can!
+## Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The project can be deployed to various platforms:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Netlify**: Connect your GitHub repository for automatic deployments
+- **Vercel**: Import your repository and deploy with one click
+- **GitHub Pages**: Use GitHub Actions for automated deployments
+
+Build the project first:
+```bash
+npm run build
+```
+
+The `dist` folder contains the production-ready files.

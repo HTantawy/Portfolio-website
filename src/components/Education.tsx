@@ -6,19 +6,19 @@ export const Education = () => {
   const education = [
     {
       year: "2025",
-      degree: "BSc Computer Science with Cyber Security",
-      institution: "University of Bedfordshire",
+      degree: "BSc Computer Science and Artificial Intelligence with a Year in Industry",
+      institution: "University of Birmingham",
       period: "2021 - 2025",
-      location: "Luton, UK",
-      description: "Comprehensive program combining computer science fundamentals with specialized cybersecurity training:",
+      location: "Birmingham, UK",
+      description: "Comprehensive program combining computer science fundamentals with specialized Artificial Intelligence training:",
       achievements: [
-        "First Class Honours degree with focus on secure software development",
-        "Specialized coursework in network security, cryptography, and ethical hacking",
-        "Completed advanced projects in digital forensics and incident response",
-        "Active participation in cybersecurity competitions and CTF challenges",
+        "2:1 Honours degree with focus on ethical use of AI",
+        "Specialized coursework in Intelligent Robotics, HCI, and ethical AI",
+        "Completed projects in recommender systems and HCI ",
+        "Active participation in cybersecurity  Hackathons",
         "Research in AI-driven threat detection and automated vulnerability assessment"
       ],
-      skills: ["Cybersecurity", "Software Engineering", "Network Security", "Digital Forensics"]
+      skills: ["Cybersecurity", "Software Engineering", "Front-End Development", "Machine Learning "]
     },
     {
       year: "2021",

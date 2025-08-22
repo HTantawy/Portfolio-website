@@ -8,7 +8,7 @@ export const Projects = () => {
     {
       title: "Intelligent Student-Supervisor Matching System",
       description: "A modern e-commerce solution with React, Node.js, and Stripe integration. Features include real-time inventory, advanced search, and mobile-responsive design.",
-      image: "photo-1486312338219-ce68d2c6f44d",
+      image: "/final2.png",
       tags: ["Python", "Streamlit", "postgreSQL", "NLTK", "AI"],
       liveUrl: "https://supervisor-matcher.streamlit.app",
       githubUrl: "https://github.com/HTantawy/FYP-DEMO"
@@ -22,12 +22,12 @@ export const Projects = () => {
       githubUrl: "https://github.com/HTantawy/Ping-Pong-Game"
     },
     {
-      title: "Mobile Banking App",
-      description: "Secure mobile banking application with biometric authentication, transaction history, and real-time notifications.",
-      image: "photo-1487058792275-0ad4aaf24ca7",
-      tags: ["React Native", "Firebase", "Redux", "Plaid"],
-      liveUrl: "https://banking-app-demo.vercel.app",
-      githubUrl: "https://github.com/yourusername/mobile-banking-app"
+      title: "AI-Powered Movie Recommender ",
+      description: "An interactive movie recommendation platform that leverages AI-driven suggestions based on users' favorite films and preferred genres",
+      image: "/movie.png",
+      tags: ["React Native", "Supabase", "OpenAI", "Typescript", "TMDB API","TailwindCSS"],
+      liveUrl: "https://cine-cue-zw7t.vercel.app/",
+      githubUrl: "https://github.com/HTantawy/cine-cue"
     },
     {
       title: "Portfolio Website",
@@ -58,7 +58,7 @@ export const Projects = () => {
             >
               <div className="aspect-video overflow-hidden">
                 <img
-                  src={`https://images.unsplash.com/${project.image}?w=600&h=400&fit=crop&auto=format`}
+                  src={project.image.startsWith('/') ? project.image : `https://images.unsplash.com/${project.image}?w=600&h=400&fit=crop&auto=format`}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

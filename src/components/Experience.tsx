@@ -18,7 +18,7 @@ export const Experience = () => {
         "Developed Python automation scripts, reducing manual workload by 30%",
         "Collaborated with the Technical Surveillance Team, optimizing real-time network health monitoring and enhancing system reliability for 10+ million EE customers."
       ],
-      skills: ["Cybersecurity", "Python Automation", "API Testing", "OWASP"]
+      skills: ["Python Scripting", "Python Automation", "API Testing", "VOiP", "Network Virtualization","Kubernetes", "Network Automation"]
     },
     {
       year: "2023",

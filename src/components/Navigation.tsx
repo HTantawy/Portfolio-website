@@ -71,7 +71,23 @@ export const Navigation = () => {
               )}
             </Button>
             <Button variant="outline" size="sm" asChild>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a 
+                href="/resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => {
+                  // Fallback for browsers that might block PDF viewing
+                  setTimeout(() => {
+                    if (!document.hasFocus()) {
+                      // If browser blocked the popup, try to download instead
+                      const downloadLink = document.createElement('a');
+                      downloadLink.href = '/resume.pdf';
+                      downloadLink.download = 'Hussein_Tantawy_Resume.pdf';
+                      downloadLink.click();
+                    }
+                  }, 100);
+                }}
+              >
                 Resume
               </a>
             </Button>
@@ -114,7 +130,24 @@ export const Navigation = () => {
                 </button>
               ))}
               <Button variant="outline" size="sm" className="w-full mt-4" asChild>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a 
+                  href="/resume.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    // Fallback for browsers that might block PDF viewing
+                    const link = e.currentTarget;
+                    setTimeout(() => {
+                      if (!document.hasFocus()) {
+                        // If browser blocked the popup, try to download instead
+                        const downloadLink = document.createElement('a');
+                        downloadLink.href = '/resume.pdf';
+                        downloadLink.download = 'Hussein_Tantawy_Resume.pdf';
+                        downloadLink.click();
+                      }
+                    }, 100);
+                  }}
+                >
                   Resume
                 </a>
               </Button>

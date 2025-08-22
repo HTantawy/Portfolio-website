@@ -1,0 +1,105 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { ExternalLink, Github } from "lucide-react";
+
+export const Projects = () => {
+  const projects = [
+    {
+      title: "Intelligent Student-Supervisor Matching System",
+      description: "A modern e-commerce solution with React, Node.js, and Stripe integration. Features include real-time inventory, advanced search, and mobile-responsive design.",
+      image: "photo-1486312338219-ce68d2c6f44d",
+      tags: ["Python", "Streamlit", "postgreSQL", "NLTK", "AI"],
+      liveUrl: "https://supervisor-matcher.streamlit.app",
+      githubUrl: "https://github.com/HTantawy/FYP-DEMO"
+    },
+    {
+      title: "Ping-Pong Game",
+      description: "Interactive Ping-Pong Game built with Python and Pygame.",
+      image: "photo-1488590528505-98d2b5aba04b",
+      tags: ["PyGame", "Python"],
+      liveUrl: "https://ai-dashboard-demo.vercel.app",
+      githubUrl: "https://github.com/HTantawy/Ping-Pong-Game"
+    },
+    {
+      title: "Mobile Banking App",
+      description: "Secure mobile banking application with biometric authentication, transaction history, and real-time notifications.",
+      image: "photo-1487058792275-0ad4aaf24ca7",
+      tags: ["React Native", "Firebase", "Redux", "Plaid"],
+      liveUrl: "https://banking-app-demo.vercel.app",
+      githubUrl: "https://github.com/yourusername/mobile-banking-app"
+    },
+    {
+      title: "Portfolio Website",
+      description: "Creative portfolio showcase with stunning animations, optimized performance, and modern design principles.",
+      image: "photo-1483058712412-4245e9b90334",
+      tags: ["Next.js", "Framer Motion", "Tailwind", "Vercel"],
+      liveUrl: "https://portfolio-demo.vercel.app",
+      githubUrl: "https://github.com/yourusername/portfolio-website"
+    }
+  ];
+
+  return (
+    <section id="projects" className="py-20 bg-muted/30">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Featured Projects</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            A showcase of my recent work, from web applications to mobile solutions
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <Card 
+              key={project.title} 
+              className="group hover:shadow-elegant transition-all duration-300 overflow-hidden border-0 bg-gradient-card backdrop-blur-sm animate-fade-in"
+              style={{ animationDelay: `${index * 200}ms` }}
+            >
+              <div className="aspect-video overflow-hidden">
+                <img
+                  src={`https://images.unsplash.com/${project.image}?w=600&h=400&fit=crop&auto=format`}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.tags.map((tag) => (
+                    <Badge 
+                      key={tag} 
+                      variant="secondary" 
+                      className="bg-primary/10 text-primary border-primary/20"
+                    >
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
+
+                <div className="flex gap-3">
+                  <Button variant="default" size="sm" asChild>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};

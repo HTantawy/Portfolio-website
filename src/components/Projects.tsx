@@ -30,12 +30,12 @@ export const Projects = () => {
       githubUrl: "https://github.com/HTantawy/cine-cue"
     },
     {
-      title: "Portfolio Website",
-      description: "Creative portfolio showcase with stunning animations, optimized performance, and modern design principles.",
+      title: "AI-Powered Cover Letter Generator",
+      description: "A Cover letter generator which helps generate personalized cover letters.",
       image: "photo-1483058712412-4245e9b90334",
-      tags: ["Next.js", "Framer Motion", "Tailwind", "Vercel"],
+      tags: ["Next.js", "React", "Tailwind", "OpenAI API"],
       liveUrl: "https://portfolio-demo.vercel.app",
-      githubUrl: "https://github.com/yourusername/portfolio-website"
+      githubUrl: "https://github.com/HTantawy/instant-letter-forge"
     }
   ];
 

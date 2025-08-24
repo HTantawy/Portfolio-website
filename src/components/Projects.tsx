@@ -32,10 +32,10 @@ export const Projects = () => {
     {
       title: "AI-Powered Cover Letter Generator",
       description: "A Cover letter generator which helps generate personalized cover letters.",
-      image: "photo-1483058712412-4245e9b90334",
+      image: "/git.png",
       tags: ["Next.js", "React", "Tailwind", "OpenAI API"],
-      liveUrl: "https://portfolio-demo.vercel.app",
-      githubUrl: "https://github.com/HTantawy/instant-letter-forge"
+      liveUrl: "https://cover-letter-generator-byhussein.vercel.app/",
+      githubUrl: "https://github.com/HTantawy/Cover-letter-generator"
     }
   ];
 

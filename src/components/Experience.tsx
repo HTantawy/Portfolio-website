@@ -68,17 +68,17 @@ export const Experience = () => {
 
                 {/* Content */}
                 <div className="flex flex-col md:flex-row">
-                  <div className="md:w-1/2 md:pr-12 md:text-right hidden md:block">
+                  <div className="md:w-1/2 md:pr-12 hidden md:block">
                     {index % 2 === 0 && (
                       <Card className="border-0 bg-gradient-card backdrop-blur-sm hover:shadow-elegant transition-all duration-300 mb-8">
                         <CardContent className="p-6">
                           <h3 className="text-2xl font-semibold mb-2">{exp.role}</h3>
-                          <div className="flex items-center justify-end mb-3 text-muted-foreground">
-                            <Calendar className="h-4 w-4 ml-2 mr-1" />
+                          <div className="flex items-center mb-3 text-muted-foreground">
+                            <Calendar className="h-4 w-4 mr-2" />
                             <span>{exp.period}</span>
                           </div>
-                          <div className="flex items-center justify-end mb-5 text-muted-foreground">
-                            <MapPin className="h-4 w-4 ml-2 mr-1" />
+                          <div className="flex items-center mb-5 text-muted-foreground">
+                            <MapPin className="h-4 w-4 mr-2" />
                             <span>{exp.location}</span>
                           </div>
                           <p className="text-muted-foreground mb-4">{exp.description}</p>
@@ -87,11 +87,11 @@ export const Experience = () => {
                               <li key={i}>{resp}</li>
                             ))}
                           </ul>
-                          <div className="flex flex-wrap gap-2 justify-end">
+                          <div className="flex flex-wrap gap-2">
                             {exp.skills.map((skill) => (
-                              <Badge 
-                                key={skill} 
-                                variant="secondary" 
+                              <Badge
+                                key={skill}
+                                variant="secondary"
                                 className="bg-primary/10 text-primary border-primary/20"
                               >
                                 {skill}
@@ -124,9 +124,9 @@ export const Experience = () => {
                           </ul>
                           <div className="flex flex-wrap gap-2">
                             {exp.skills.map((skill) => (
-                              <Badge 
-                                key={skill} 
-                                variant="secondary" 
+                              <Badge
+                                key={skill}
+                                variant="secondary"
                                 className="bg-primary/10 text-primary border-primary/20"
                               >
                                 {skill}

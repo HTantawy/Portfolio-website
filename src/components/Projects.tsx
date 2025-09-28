@@ -36,6 +36,14 @@ export const Projects = () => {
       tags: ["Next.js", "React", "Tailwind", "OpenAI API"],
       liveUrl: "https://cover-letter-generator-byhussein.vercel.app/",
       githubUrl: "https://github.com/HTantawy/Cover-letter-generator"
+    },
+    {
+      title: "AI-Powered Image and Video Generation",
+      description: " An interactive app that generates AI images & videos using the Runware API, with a Supabase Edge Function proxy for secure server-side .",
+      image: "/runware.png",
+      tags: ["Next.js", "React", "Tailwind", "Supabase", "Runware API", "Vercel", "TypeScript", "Vite"],
+      liveUrl: "https://husseins-runware-project.vercel.app/",
+      githubUrl: "https://github.com/HTantawy/AI-Powered-Media-Generation-Platform"
     }
   ];
 
@@ -51,9 +59,9 @@ export const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card 
-              key={project.title} 
-              className="group hover:shadow-elegant transition-all duration-300 overflow-hidden border-0 bg-gradient-card backdrop-blur-sm animate-fade-in"
+            <Card
+              key={project.title}
+              className="group hover:shadow-elegant hover:shadow-glow hover:border-primary/50 transition-all duration-300 overflow-hidden border-0 bg-gradient-card backdrop-blur-sm animate-fade-in"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="aspect-video overflow-hidden">

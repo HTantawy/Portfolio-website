@@ -26,7 +26,7 @@ export const Projects = () => {
       description: "An interactive movie recommendation platform that leverages AI-driven suggestions based on users' favorite films and preferred genres",
       image: "/movie.png",
       tags: ["React Native", "Supabase", "OpenAI", "Typescript", "TMDB API","TailwindCSS"],
-      liveUrl: "https://cine-cue-zw7t.vercel.app/",
+      liveUrl: "https://cine-cue-sepia.vercel.app/",
       githubUrl: "https://github.com/HTantawy/cine-cue"
     },
     {

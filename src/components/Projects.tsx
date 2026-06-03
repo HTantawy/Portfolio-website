@@ -14,19 +14,19 @@ export const Projects = () => {
       githubUrl: "https://github.com/HTantawy/FYP-DEMO"
     },
     {
-      title: "Ping-Pong Game",
-      description: "Interactive Ping-Pong Game built with Python and Pygame.",
-      image: "photo-1488590528505-98d2b5aba04b",
-      tags: ["PyGame", "Python"],
-      liveUrl: "https://ai-dashboard-demo.vercel.app",
-      githubUrl: "https://github.com/HTantawy/Ping-Pong-Game"
+      title: "Aperia Jobs — UK Visa-Sponsorship Job Platform",
+      description: "A full-stack job search platform that helps international graduates and skilled professionals find UK roles offering Skilled Worker visa sponsorship. Built with React, TypeScript, and Supabase, it features a daily automated web scraper (Supabase Edge Function) that ingests verified sponsor-licensed employers, advanced search and filtering, user authentication, and a clean mobile-responsive UI.",
+      image: "/aperia.png",
+      tags: ["React", "TypeScript", "Supabase", "PostgreSQL", "Deno", "Tailwind", "Stripe"],
+      liveUrl: "https://www.aperiajobs.com/",
+      githubUrl: "https://github.com/HTantawy/Aperia-Jobs"
     },
     {
       title: "AI-Powered Movie Recommender ",
       description: "An interactive movie recommendation platform that leverages AI-driven suggestions based on users' favorite films and preferred genres",
       image: "/movie.png",
       tags: ["React Native", "Supabase", "OpenAI", "Typescript", "TMDB API","TailwindCSS"],
-      liveUrl: "https://cine-cue-sepia.vercel.app/",
+      liveUrl: "https://ai-movierecommender.vercel.app/",
       githubUrl: "https://github.com/HTantawy/cine-cue"
     },
     {
@@ -53,7 +53,7 @@ export const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Featured Projects</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my recent work, from web applications to mobile solutions
+            A showcase of my recent work, showcasing client projects and personal ones
           </p>
         </div>
 

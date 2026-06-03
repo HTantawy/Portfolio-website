@@ -4,6 +4,25 @@ import { Calendar, MapPin } from "lucide-react";
 
 export const Experience = () => {
   const experiences = [
+{
+  year: "2025",
+  role: "AI and Data Engineer - Deloitte",
+  period: "January 2026 - Present",
+  location: "Remote",
+  description: "Built internal AI product features for a ChatGPT style document intelligence platform, enabling users to upload business documents and ask grounded questions using RAG, agents, and vector search:",
+  responsibilities: [
+    "Built Python and FastAPI document ingestion pipelines for PDFs, Word files, spreadsheets, and mixed business documents",
+    "Implemented chunking, metadata enrichment, embedding generation, and indexing workflows to improve retrieval accuracy",
+    "Used Qdrant as a vector database to store embeddings and power semantic search across uploaded documents",
+    "Integrated OpenAI APIs for embeddings and LLM based question answering grounded in retrieved document context",
+    "Developed ADK based agent workflows connecting retrieval, prompt orchestration, tool calling, and response generation",
+    "Improved reliability across messy real world documents by testing long PDFs, tables, scanned files, and inconsistent layouts",
+    "Containerised services with Docker and supported deployment across Azure cloud environments",
+    "Balanced product and engineering tradeoffs around accuracy, latency, usability, maintainability, and user trust"
+  ],
+  skills: ["Python", "FastAPI", "RAG", "ADK", "OpenAI API", "Qdrant", "Vector Search", "Document Processing", "Docker", "Azure", "LLM Agents"]
+    },
+    
     {
       year: "2024",
       role: "Software Automation Engineer - BT",

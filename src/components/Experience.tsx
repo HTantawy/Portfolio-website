@@ -5,7 +5,7 @@ import { Calendar, MapPin } from "lucide-react";
 export const Experience = () => {
   const experiences = [
 {
-  year: "2025",
+  year: "2026",
   role: "AI and Data Engineer - Deloitte",
   period: "January 2026 - Present",
   location: "Remote",
